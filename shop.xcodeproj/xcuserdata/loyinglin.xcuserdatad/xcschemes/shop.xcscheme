@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63249C9A1754E07900372FD7"
-               BuildableName = "ECMobile.app"
+               BuildableName = "&#x6210;&#x90fd;&#x8d1d;&#x683c;&#x7545;&#x601d;.app"
                BlueprintName = "shop"
                ReferencedContainer = "container:shop.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63249C9A1754E07900372FD7"
-            BuildableName = "ECMobile.app"
+            BuildableName = "&#x6210;&#x90fd;&#x8d1d;&#x683c;&#x7545;&#x601d;.app"
             BlueprintName = "shop"
             ReferencedContainer = "container:shop.xcodeproj">
          </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63249C9A1754E07900372FD7"
-            BuildableName = "ECMobile.app"
+            BuildableName = "&#x6210;&#x90fd;&#x8d1d;&#x683c;&#x7545;&#x601d;.app"
             BlueprintName = "shop"
             ReferencedContainer = "container:shop.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63249C9A1754E07900372FD7"
-            BuildableName = "ECMobile.app"
+            BuildableName = "&#x6210;&#x90fd;&#x8d1d;&#x683c;&#x7545;&#x601d;.app"
             BlueprintName = "shop"
             ReferencedContainer = "container:shop.xcodeproj">
          </BuildableReference>

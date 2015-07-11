@@ -71,7 +71,7 @@ ON_CREATE_VIEWS( signal )
     self.list.headerClass = [CommonPullLoader class];
     self.list.headerShown = YES;
 
-    self.list.footerClass = [CommonFootLoader class];
+//    self.list.footerClass = [CommonFootLoader class];
 //    self.list.footerShown = YES;
 
     self.list.lineCount = 1;

@@ -110,7 +110,7 @@
 <string name="shopcar_add">Go around and buy</string>
 <string name="shopcarfooter_total">Subtotal:</string>
 <string name="shopcarfooter_settleaccounts">Check out</string>
-<string name="shopcarhead_ecm">ECMobile</string>
+<string name="shopcarhead_ecm">成都贝格畅思</string>
 <string name="shopcaritem_done">Done</string>
 <string name="shopcaritem_modification">Modify</string>
 <string name="shopcaritem_remove">Remove product</string>
@@ -197,7 +197,7 @@
 <string name="no_data">No informations</string>
 <string name="check_or_not">Check orders right now?</string>
 <string name="use">Exchange</string>
-<string name="share_blog">I found an incredible product on ECMobile, check it out</string>
+<string name="share_blog">I found an incredible product on 成都贝格畅思, check it out</string>
 <string name="number">Amount:</string>
 <string name="crash_log_analysis">Crash log analysis</string>
 <string name="welcome">Welcome</string>
@@ -289,7 +289,7 @@
 <string name="single">Single</string>
 <string name="multiple">Multiple</string>
 <string name="unique">Unique</string>
-<string name="ecmobile">ECMobile</string>
+<string name="ecmobile">成都贝格畅思22</string>
 <string name="new_activity">New activities</string>
 <string name="save">Save</string>
 <string name="avail_exp">Available points</string>
@@ -320,7 +320,7 @@
 <string name="please_input">Please input</string>
 <string name="signing_up">Signing…</string>
 <string name="large_photo">Large photo</string>
-<string name="app_name">ECMobile</string>
+<string name="app_name">成都贝格畅思</string>
 <string name="user_not_exist">User does not exist</string>
 <string name="invalid_password">Invalid password</string>
 <string name="user_or_email_exists">Username or email has been used</string>
@@ -332,9 +332,9 @@
 <string name="unify_service">后台统一管理，降低成本</string>
 <string name="unify_response">安装成功后，无需再针对客户端进行另外设置，与ECShop进行统一后台管理操作，网站与客户端即可实现实时响应</string>
 <string name="smooth_operation_experience">更便捷、流畅的操作体验</string>
-<string name="ecmobile_design_introduction">汲取最新设计灵感，基于人性化体验理念，多年客户端经验团队打造，ECMobile更适合当下用户的界面设计和操作流程，不受时间空间限制，给客户以畅快、舒适的购物体验，专享快节奏的移动生活</string>
+<string name="ecmobile_design_introduction">汲取最新设计灵感，基于人性化体验理念，多年客户端经验团队打造，成都贝格畅思更适合当下用户的界面设计和操作流程，不受时间空间限制，给客户以畅快、舒适的购物体验，专享快节奏的移动生活</string>
 <string name="excellent_service">拓宽商城渠道，提升服务品质</string>
-<string name="excellent_parter">不拘泥于电脑操作，不限制在固定空间，ECMobile有效提升了商城的宣传及销售渠道，让您更容易的找到生意伙伴，创造共赢</string>
+<string name="excellent_parter">不拘泥于电脑操作，不限制在固定空间，成都贝格畅思有效提升了商城的宣传及销售渠道，让您更容易的找到生意伙伴，创造共赢</string>
 <string name="success_share">Success!!</string>
 <string name="user_cancel">User cancelled!!</string>
 <string name="fail_share">：Failed!!</string>
@@ -347,6 +347,7 @@
 <string name="shipping_fee_free">Free</string>
 <string name="shipping_fee_notfree">Not free</string>
 <string name="no_result">No result</string>
+<string name="special_sale">SALE</string>
 <string name="switch_auto_mode">Switched to auto mode</string>
 <string name="switch_high_mode">Switched to high quality</string>
 <string name="switch_low_mode">Switched to low quality</string>

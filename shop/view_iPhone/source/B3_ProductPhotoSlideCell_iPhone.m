@@ -35,10 +35,11 @@ SUPPORT_AUTOMATIC_LAYOUT( YES );
     _photo.indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
     _photo.contentMode = UIViewContentModeScaleAspectFit;
     
-    _zoomView = [[BeeUIZoomView alloc] init];
-    _zoomView.backgroundColor = [UIColor blackColor];
-    [_zoomView setContent:_photo animated:NO];
-    [self addSubview:_zoomView];
+//    _zoomView = [[BeeUIZoomView alloc] init];
+//    _zoomView.backgroundColor = [UIColor blackColor];
+//    [_zoomView setContent:_photo animated:NO];
+//    [self addSubview:_zoomView];
+    [self addSubview: _photo];
 }
 
 - (void)unload

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="special_sale">特价</string>
 <string name="lifecycle_all">所有</string>
 <string name="lifecycle_visible">可见</string>
 <string name="lifecycle_frontdeskoperation">前台运行</string>
@@ -110,7 +111,7 @@
 <string name="shopcar_add">赶紧去逛逛吧！加一些商品~</string>
 <string name="shopcarfooter_total">总计：</string>
 <string name="shopcarfooter_settleaccounts">结算</string>
-<string name="shopcarhead_ecm">ECMobile</string>
+<string name="shopcarhead_ecm">成都贝格畅思</string>
 <string name="shopcaritem_done">完成</string>
 <string name="shopcaritem_modification">修改</string>
 <string name="shopcaritem_remove">移除商品</string>
@@ -289,7 +290,7 @@
 <string name="single">单选</string>
 <string name="multiple">多选</string>
 <string name="unique">唯一</string>
-<string name="ecmobile">移动商城</string>
+<string name="ecmobile">成都贝格畅思</string>
 <string name="new_activity">最新活动</string>
 <string name="save">保存</string>
 <string name="avail_exp">您的可用积分为</string>
@@ -325,16 +326,16 @@
 <string name="invalid_password">密码错误</string>
 <string name="user_or_email_exists">用户名或email已使用</string>
 <string name="unexist_information">不存在的信息</string>
-<string name="easily_get_ecmobile">轻松拥有移动商城</string>
+<string name="easily_get_ecmobile">轻松拥有成都贝格畅思</string>
 <string name="no_need_to_change_code">无需修改已有商城程序，即可拥有属于自己的移动商城</string>
 <string name="two_main_os">覆盖两大主流操作系统</string>
 <string name="special_app_for_cellphone">专属手机客户端，适用于目前世界上使用最为广泛的iOS和Android两大操作系统</string>
 <string name="unify_service">后台统一管理，降低成本</string>
 <string name="unify_response">安装成功后，无需再针对客户端进行另外设置，与ECShop进行统一后台管理操作，网站与客户端即可实现实时响应</string>
 <string name="smooth_operation_experience">更便捷、流畅的操作体验</string>
-<string name="ecmobile_design_introduction">汲取最新设计灵感，基于人性化体验理念，多年客户端经验团队打造，移动商城更适合当下用户的界面设计和操作流程，不受时间空间限制，给客户以畅快、舒适的购物体验，专享快节奏的移动生活</string>
+<string name="ecmobile_design_introduction">汲取最新设计灵感，基于人性化体验理念，多年客户端经验团队打造，成都贝格畅思更适合当下用户的界面设计和操作流程，不受时间空间限制，给客户以畅快、舒适的购物体验，专享快节奏的移动生活</string>
 <string name="excellent_service">拓宽商城渠道，提升服务品质</string>
-<string name="excellent_parter">不拘泥于电脑操作，不限制在固定空间，移动商城有效提升了商城的宣传及销售渠道，让您更容易的找到生意伙伴，创造共赢</string>
+<string name="excellent_parter">不拘泥于电脑操作，不限制在固定空间，成都贝格畅思有效提升了商城的宣传及销售渠道，让您更容易的找到生意伙伴，创造共赢</string>
 <string name="success_share">成功！！</string>
 <string name="user_cancel">用户取消！！</string>
 <string name="fail_share">：失败！！</string>

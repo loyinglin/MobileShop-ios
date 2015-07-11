@@ -96,28 +96,28 @@ SUPPORT_AUTOMATIC_LAYOUT( YES )
 	}
 }
 
-ON_SIGNAL3( B0_IndexCategoryCell_iPhone, category, signal )
-{
-    if ( [signal is:BeeUIButton.TOUCH_UP_INSIDE] )
-    {
-        [self sendUISignal:self.CATEGORY_TOUCHED];
-    }
-}
+//ON_SIGNAL3( B0_IndexCategoryCell_iPhone, category, signal )
+//{
+//    if ( [signal is:BeeUIButton.TOUCH_UP_INSIDE] )
+//    {
+//        [self sendUISignal:self.CATEGORY_TOUCHED];
+//    }
+//}
 
-ON_SIGNAL3( B0_IndexCategoryCell_iPhone, goods1, signal )
-{
-    if ( [signal is:BeeUIButton.TOUCH_UP_INSIDE] )
-    {
-        [self sendUISignal:self.GOODS1_TOUCHED];
-    }
-}
+//ON_SIGNAL3( B0_IndexCategoryCell_iPhone, goods1, signal )
+//{
+//    if ( [signal is:BeeUIButton.TOUCH_UP_INSIDE] )
+//    {
+//        [self sendUISignal:self.GOODS1_TOUCHED];
+//    }
+//}
 
-ON_SIGNAL3( B0_IndexCategoryCell_iPhone, goods2, signal )
-{
-    if ( [signal is:BeeUIButton.TOUCH_UP_INSIDE] )
-    {
-        [self sendUISignal:self.GOODS2_TOUCHED];
-    }
-}
+//ON_SIGNAL3( B0_IndexCategoryCell_iPhone, goods2, signal )
+//{
+//    if ( [signal is:BeeUIButton.TOUCH_UP_INSIDE] )
+//    {
+//        [self sendUISignal:self.GOODS2_TOUCHED];
+//    }
+//}
 
 @end

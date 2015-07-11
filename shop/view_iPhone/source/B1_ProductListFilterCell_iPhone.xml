@@ -81,13 +81,14 @@
             width: 65px;
             height: 100%;
             color: #fff;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: bold;
             text-align: right;
         }
         
         .filter-icon {
             margin-left: 5px;
+            margin-top: 2px;
             width: 12px;
             height: 13px;
             v-float: center;

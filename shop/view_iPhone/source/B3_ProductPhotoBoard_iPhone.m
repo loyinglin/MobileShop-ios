@@ -33,7 +33,7 @@ ON_CREATE_VIEWS( signal )
     
     [self showBarButton:BeeUINavigationBar.LEFT image:[UIImage imageNamed:@"nav_back.png"]];
     
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor clearColor];
     
     @weakify(self);
     
@@ -41,6 +41,7 @@ ON_CREATE_VIEWS( signal )
     
     self.list.whenReloading = ^
     {
+//        NSLog(@"reloading");
         @normalize(self);
         
         self.list.total = self.goods.pictures.count;
@@ -55,6 +56,7 @@ ON_CREATE_VIEWS( signal )
     };
     self.list.whenReloaded = ^
     {
+//        NSLog(@"reloaded");
         @normalize(self);
         
         self.pager.numberOfPages = self.list.total;
@@ -62,6 +64,7 @@ ON_CREATE_VIEWS( signal )
     };
     self.list.whenStop = ^
     {
+//        NSLog(@"stop");
         @normalize(self);;
         
         self.pager.numberOfPages = self.list.total;

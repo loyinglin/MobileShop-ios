@@ -233,7 +233,7 @@ ON_SIGNAL3( B0_BannerPhotoCell_iPhone, mask, signal )
 /**
  * 首页-分类商品-分类，点击事件触发时执行的操作
  */
-ON_SIGNAL3( B0_IndexCategoryCell_iPhone, CATEGORY_TOUCHED, signal )
+ON_SIGNAL3( B0_IndexCategoryCell_iPhone, category, signal )
 {
     CATEGORY * category = signal.sourceCell.data;
     
@@ -251,7 +251,7 @@ ON_SIGNAL3( B0_IndexCategoryCell_iPhone, CATEGORY_TOUCHED, signal )
 /**
  * 首页-分类商品-商品1，点击事件触发时执行的操作
  */
-ON_SIGNAL3( B0_IndexCategoryCell_iPhone, GOODS1_TOUCHED, signal )
+ON_SIGNAL3( B0_IndexCategoryCell_iPhone, goods1, signal )
 {
     CATEGORY * category = signal.sourceCell.data;
     
@@ -271,7 +271,7 @@ ON_SIGNAL3( B0_IndexCategoryCell_iPhone, GOODS1_TOUCHED, signal )
 /**
  * 首页-分类商品-商品2，点击事件触发时执行的操作
  */
-ON_SIGNAL3( B0_IndexCategoryCell_iPhone, GOODS2_TOUCHED, signal )
+ON_SIGNAL3( B0_IndexCategoryCell_iPhone, goods2, signal )
 {
     CATEGORY * category = signal.sourceCell.data;
     

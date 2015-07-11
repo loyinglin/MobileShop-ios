@@ -88,7 +88,9 @@ ON_SIGNAL2( BeeUIBoard, signal )
 	{
         self.view.backgroundColor = [UIColor whiteColor];
 
-		bee.ui.router[self.TAB_HOME]	= [B0_IndexBoard_iPhone class];
+//        bee.ui.router[@"test"] = nil;
+        [bee.ui.router map:self.TAB_HOME toClass:[B0_IndexBoard_iPhone class]];
+	//	bee.ui.router[self.TAB_HOME]	= [B0_IndexBoard_iPhone class];
 		bee.ui.router[self.TAB_SEARCH]	= [D0_SearchBoard_iPhone class];
 		bee.ui.router[self.TAB_CART]	= [C0_ShoppingCartBoard_iPhone class];
 		bee.ui.router[self.TAB_USER]	= [E0_ProfileBoard_iPhone sharedInstance];
@@ -153,7 +155,8 @@ ON_SIGNAL2( BeeUIBoard, signal )
 
 ON_SIGNAL3( AppBoard_iPhone, EXPIRE_TOUCHED, signal )
 {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ecmobile.me"]];
+    [self presentMessageTips:@"404NotFound-by_loyinglin"];
+//	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.ecmobile.me"]];
 }
 
 #pragma mark -
@@ -242,6 +245,7 @@ ON_NOTIFICATION3( UserModel, LOGIN, n )
 
 - (void)showTabbar
 {
+//    return ;
 	_tabbarOriginY = self.view.height - TAB_HEIGHT + 1;
 	
     CGRect tabbarFrame = bee.ui.tabbar.frame;

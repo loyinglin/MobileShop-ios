@@ -16,7 +16,7 @@
             </col>
             <col class="icon-wrapper">
                 <image id="recommend-goods-sale-bg"/>
-                <label id="recommend-goods-sale">特价</label>
+                <label id="recommend-goods-sale">@{special_sale}</label>
             </col>
         </row>
     </row>

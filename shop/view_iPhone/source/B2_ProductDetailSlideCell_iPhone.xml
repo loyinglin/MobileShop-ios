@@ -3,12 +3,19 @@
     
     <col class="container">
         <col class="slide-wrapper">
+            <label class="test">for_test</label>
             <image class="slide-wrapper-bg"/>
             <image id="slide-image"/>
         </col>
     </col>
     
     <style>
+        .test{
+        witdh: 10px;
+        height: 10px;
+        }
+        
+        
         .container {
             width: 174px;
             height: 174px;
@@ -28,13 +35,16 @@
             position: absolute;
             left: 0;
             top: 0;
+            width: 140px;
+            height: 140px;
+            margin-top: 10px;
         }
         
         #slide-image {
             margin-top: 6px;
             margin-left: 6px;
-            width: 150px;
-            height: 150px;
+            width: 130px;
+            height: 130px;
             image-mode: fit;
             image-loading: gray;
         }

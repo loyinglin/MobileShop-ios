@@ -64,10 +64,12 @@ ON_SIGNAL3( BeeUIPullLoader, STATE_CHANGED, signal )
 		[UIView setAnimationBeginsFromCurrentState:YES];
 		[UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
 		[UIView setAnimationDuration:0.25f];
+  //      NSLog(@"animated");
 	}
 	
 	if ( self.pulling )
 	{
+//        NSLog(@"pulling");
 		self.alpha = 1.0f;
 
 		self.arrow.hidden = NO;
@@ -78,6 +80,7 @@ ON_SIGNAL3( BeeUIPullLoader, STATE_CHANGED, signal )
 	}
 	else if ( self.loading )
 	{
+//        NSLog(@"loading");
 		self.alpha = 1.0f;
 		
 		self.indicator.hidden = NO;
@@ -89,6 +92,7 @@ ON_SIGNAL3( BeeUIPullLoader, STATE_CHANGED, signal )
 	}
 	else
 	{
+//        NSLog(@"end");
 		self.alpha = 0.0f;
 
 		self.arrow.hidden = NO;

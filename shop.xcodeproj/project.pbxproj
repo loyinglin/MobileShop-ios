@@ -314,7 +314,6 @@
 		CB9C236918BB3B0C00DDA501 /* wizard_4.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB9C216B18BB3B0A00DDA501 /* wizard_4.xml */; };
 		CB9C236A18BB3B0C00DDA501 /* wizard_5.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB9C216C18BB3B0A00DDA501 /* wizard_5.xml */; };
 		CB9C236B18BB3B0C00DDA501 /* A0_SigninBoard_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9C216F18BB3B0A00DDA501 /* A0_SigninBoard_iPhone.m */; };
-		CB9C236C18BB3B0C00DDA501 /* A0_SigninBoard_iPhone.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB9C217018BB3B0A00DDA501 /* A0_SigninBoard_iPhone.xml */; };
 		CB9C236D18BB3B0C00DDA501 /* A1_SignupBoard_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9C217218BB3B0A00DDA501 /* A1_SignupBoard_iPhone.m */; };
 		CB9C236E18BB3B0C00DDA501 /* A1_SignupBoard_iPhone.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB9C217318BB3B0A00DDA501 /* A1_SignupBoard_iPhone.xml */; };
 		CB9C236F18BB3B0C00DDA501 /* A1_SignupCell_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9C217518BB3B0A00DDA501 /* A1_SignupCell_iPhone.m */; };
@@ -902,6 +901,7 @@
 		E9F5E98419546EAA00216A56 /* ServiceWizard_PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5E7B419546EA900216A56 /* ServiceWizard_PhotoCell.m */; };
 		E9F5E98519546EAA00216A56 /* ServiceWizard_PhotoCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = E9F5E7B519546EA900216A56 /* ServiceWizard_PhotoCell.xml */; };
 		E9F5E98619546EAA00216A56 /* ServiceWizard_Window.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5E7B719546EA900216A56 /* ServiceWizard_Window.m */; };
+		FD3E7B4D1B43950200C6CE95 /* A0_SigninBoard_iPhone.xml in Resources */ = {isa = PBXBuildFile; fileRef = FD3E7B4F1B43950200C6CE95 /* A0_SigninBoard_iPhone.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -960,7 +960,7 @@
 		630236EA177C1675004C052D /* shop-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "shop-Prefix.pch"; sourceTree = "<group>"; };
 		630236EE177C1675004C052D /* AppBoard_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppBoard_iPad.h; sourceTree = "<group>"; };
 		630236EF177C1675004C052D /* AppBoard_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppBoard_iPad.m; sourceTree = "<group>"; };
-		63249C9B1754E07900372FD7 /* ECMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63249C9B1754E07900372FD7 /* 成都贝格畅思.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "成都贝格畅思.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6324A4091754FC7700372FD7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		6324A40A1754FC7700372FD7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6324A40B1754FC7700372FD7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1282,7 +1282,6 @@
 		CB9C216C18BB3B0A00DDA501 /* wizard_5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wizard_5.xml; sourceTree = "<group>"; };
 		CB9C216E18BB3B0A00DDA501 /* A0_SigninBoard_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A0_SigninBoard_iPhone.h; sourceTree = "<group>"; };
 		CB9C216F18BB3B0A00DDA501 /* A0_SigninBoard_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A0_SigninBoard_iPhone.m; sourceTree = "<group>"; };
-		CB9C217018BB3B0A00DDA501 /* A0_SigninBoard_iPhone.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = A0_SigninBoard_iPhone.xml; sourceTree = "<group>"; };
 		CB9C217118BB3B0A00DDA501 /* A1_SignupBoard_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A1_SignupBoard_iPhone.h; sourceTree = "<group>"; };
 		CB9C217218BB3B0A00DDA501 /* A1_SignupBoard_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A1_SignupBoard_iPhone.m; sourceTree = "<group>"; };
 		CB9C217318BB3B0A00DDA501 /* A1_SignupBoard_iPhone.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = A1_SignupBoard_iPhone.xml; sourceTree = "<group>"; };
@@ -2444,6 +2443,7 @@
 		E9F5E7B519546EA900216A56 /* ServiceWizard_PhotoCell.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ServiceWizard_PhotoCell.xml; sourceTree = "<group>"; };
 		E9F5E7B619546EA900216A56 /* ServiceWizard_Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceWizard_Window.h; sourceTree = "<group>"; };
 		E9F5E7B719546EA900216A56 /* ServiceWizard_Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceWizard_Window.m; sourceTree = "<group>"; };
+		FD3E7B4E1B43950200C6CE95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = en; path = en.lproj/A0_SigninBoard_iPhone.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2636,7 +2636,7 @@
 		63249C9C1754E07900372FD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63249C9B1754E07900372FD7 /* ECMobile.app */,
+				63249C9B1754E07900372FD7 /* 成都贝格畅思.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3091,7 +3091,7 @@
 			children = (
 				CB9C216E18BB3B0A00DDA501 /* A0_SigninBoard_iPhone.h */,
 				CB9C216F18BB3B0A00DDA501 /* A0_SigninBoard_iPhone.m */,
-				CB9C217018BB3B0A00DDA501 /* A0_SigninBoard_iPhone.xml */,
+				FD3E7B4F1B43950200C6CE95 /* A0_SigninBoard_iPhone.xml */,
 				CB9C217118BB3B0A00DDA501 /* A1_SignupBoard_iPhone.h */,
 				CB9C217218BB3B0A00DDA501 /* A1_SignupBoard_iPhone.m */,
 				CB9C217318BB3B0A00DDA501 /* A1_SignupBoard_iPhone.xml */,
@@ -5140,7 +5140,7 @@
 			);
 			name = shop;
 			productName = shop;
-			productReference = 63249C9B1754E07900372FD7 /* ECMobile.app */;
+			productReference = 63249C9B1754E07900372FD7 /* 成都贝格畅思.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -5153,7 +5153,7 @@
 				ORGANIZATIONNAME = "成都";
 				TargetAttributes = {
 					63249C9A1754E07900372FD7 = {
-						DevelopmentTeam = 26R8TYMFHL;
+						DevelopmentTeam = HF83WH5SDV;
 					};
 				};
 			};
@@ -5261,7 +5261,7 @@
 				CB9C236318BB3B0C00DDA501 /* tuitional_img_5_2@2x.png in Resources */,
 				CB9C22F518BB3B0C00DDA501 /* item_grid_float_bg_grey@2x.png in Resources */,
 				CB9C239818BB3B0C00DDA501 /* B2_ProductSpecifyCell_iPhone.xml in Resources */,
-				CB9C236C18BB3B0C00DDA501 /* A0_SigninBoard_iPhone.xml in Resources */,
+				FD3E7B4D1B43950200C6CE95 /* A0_SigninBoard_iPhone.xml in Resources */,
 				CB9C238418BB3B0C00DDA501 /* B1_ProductListFilterCell_iPhone.xml in Resources */,
 				CB9C231D18BB3B0C00DDA501 /* profile_refresh_site_icon@2x.png in Resources */,
 				CB9C22F718BB3B0C00DDA501 /* item_grid_header_arrow_icon@2x.png in Resources */,
@@ -6064,6 +6064,17 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		FD3E7B4F1B43950200C6CE95 /* A0_SigninBoard_iPhone.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3E7B4E1B43950200C6CE95 /* en */,
+			);
+			name = A0_SigninBoard_iPhone.xml;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		63249CB61754E07900372FD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -6076,8 +6087,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -6092,8 +6102,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "1AC7FD9F-2989-4F7A-A4A9-B4A5F4DC08E9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1AC7FD9F-2989-4F7A-A4A9-B4A5F4DC08E9";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -6110,8 +6119,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
@@ -6121,8 +6129,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "1AC7FD9F-2989-4F7A-A4A9-B4A5F4DC08E9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1AC7FD9F-2989-4F7A-A4A9-B4A5F4DC08E9";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -6134,8 +6141,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Donglin Li (C57FZJKD84)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Donglin Li (C57FZJKD84)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/services/bee.services.siri/vendor",
@@ -6162,9 +6168,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ECMobile;
-				PROVISIONING_PROFILE = "4D1A71C6-55C8-4413-8CC1-2ED6D42FED55";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4D1A71C6-55C8-4413-8CC1-2ED6D42FED55";
+				PRODUCT_NAME = "成都贝格畅思";
+				PROVISIONING_PROFILE = "";
 				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
@@ -6177,8 +6182,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Donglin Li (C57FZJKD84)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Donglin Li (C57FZJKD84)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/services/bee.services.siri/vendor",
@@ -6205,9 +6209,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ECMobile;
-				PROVISIONING_PROFILE = "4D1A71C6-55C8-4413-8CC1-2ED6D42FED55";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4D1A71C6-55C8-4413-8CC1-2ED6D42FED55";
+				PRODUCT_NAME = "成都贝格畅思";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
@@ -6225,8 +6228,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
@@ -6236,8 +6238,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "1AC7FD9F-2989-4F7A-A4A9-B4A5F4DC08E9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1AC7FD9F-2989-4F7A-A4A9-B4A5F4DC08E9";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -6249,8 +6250,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Donglin Li (C57FZJKD84)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Donglin Li (C57FZJKD84)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/services/bee.services.siri/vendor",
@@ -6277,9 +6277,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ECMobile;
-				PROVISIONING_PROFILE = "4D1A71C6-55C8-4413-8CC1-2ED6D42FED55";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4D1A71C6-55C8-4413-8CC1-2ED6D42FED55";
+				PRODUCT_NAME = "成都贝格畅思";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;

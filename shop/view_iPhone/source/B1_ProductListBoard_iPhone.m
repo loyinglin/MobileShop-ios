@@ -265,14 +265,14 @@ ON_SIGNAL2( BeeUITextField, signal )
 	{
 		_searchBackground.hidden = NO;
 		[self hideBarButton:BeeUINavigationBar.RIGHT];
-		_titleSearch.frame = CGRectMake(0, 0, self.view.width, 44.0f);
+//		_titleSearch.frame = CGRectMake(0, 0, self.view.width, 44.0f);
 	}
 	
 	if ( [signal is:BeeUITextField.WILL_DEACTIVE] )
 	{
 		_searchBackground.hidden = YES;
 		[self showBarButton:BeeUINavigationBar.RIGHT title:__TEXT(@"filter") image:[UIImage imageNamed:@"nav_right.png"]];
-		_titleSearch.frame = CGRectMake(0, 0, self.view.width, 44.0f);
+//		_titleSearch.frame = CGRectMake(0, 0, self.view.width, 44.0f);
 	}
 
 }

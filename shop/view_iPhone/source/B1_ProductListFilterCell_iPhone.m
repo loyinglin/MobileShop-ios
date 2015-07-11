@@ -75,11 +75,13 @@ SUPPORT_RESOURCE_LOADING( YES )
 
 - (void)selectTab3
 {
-	$(@"#item-popular").CSS( @"color: #999" );
+    $(@"item-popular").CSS(@"color:#999");
+//	$(@"#item-popular").CSS( @"color: #999" );
 	$(@"#item-cheap").CSS( @"color: #999" );
 	$(@"#item-expensive").CSS( @"color: #fff" );
     
-    $(@"item-popular-arrow").CSS( @"image: url(item_grid_filter_down_arrow.png)" );
+    $(@"#item-popular-arrow").CSS( @"image: url(item_grid_filter_up_arrow.png)" );
+//    $(@"item-popular-arrow").CSS( @"image: url(item_grid_filter_down_arrow.png)" );
     $(@"item-cheap-arrow").CSS( @"image: url(item_grid_filter_down_arrow.png)" );
     $(@"item-expensive-arrow").CSS( @"image: url(item_grid_filter_down_active_arrow.png)" );
     
