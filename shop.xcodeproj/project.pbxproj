@@ -902,6 +902,7 @@
 		E9F5E98519546EAA00216A56 /* ServiceWizard_PhotoCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = E9F5E7B519546EA900216A56 /* ServiceWizard_PhotoCell.xml */; };
 		E9F5E98619546EAA00216A56 /* ServiceWizard_Window.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5E7B719546EA900216A56 /* ServiceWizard_Window.m */; };
 		FD3E7B4D1B43950200C6CE95 /* A0_SigninBoard_iPhone.xml in Resources */ = {isa = PBXBuildFile; fileRef = FD3E7B4F1B43950200C6CE95 /* A0_SigninBoard_iPhone.xml */; };
+		FD9D2A491B536ABC00767501 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = FD9D2A481B536ABC00767501 /* test.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2444,6 +2445,7 @@
 		E9F5E7B619546EA900216A56 /* ServiceWizard_Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceWizard_Window.h; sourceTree = "<group>"; };
 		E9F5E7B719546EA900216A56 /* ServiceWizard_Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceWizard_Window.m; sourceTree = "<group>"; };
 		FD3E7B4E1B43950200C6CE95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = en; path = en.lproj/A0_SigninBoard_iPhone.xml; sourceTree = "<group>"; };
+		FD9D2A481B536ABC00767501 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2684,6 +2686,7 @@
 			isa = PBXGroup;
 			children = (
 				CB81D08E18ABB3EE00F277EA /* AddressInfoModel.h */,
+				FD9D2A481B536ABC00767501 /* test.xml */,
 				CB81D08F18ABB3EE00F277EA /* AddressInfoModel.m */,
 				CB81D09018ABB3EE00F277EA /* AddressListModel.h */,
 				CB81D09118ABB3EE00F277EA /* AddressListModel.m */,
@@ -5376,6 +5379,7 @@
 				CB9C229D18BB3B0C00DDA501 /* CommonPullLoader.xml in Resources */,
 				CB9C22A918BB3B0C00DDA501 /* FormOptionCell2.xml in Resources */,
 				CB9C236518BB3B0C00DDA501 /* wizard.css in Resources */,
+				FD9D2A491B536ABC00767501 /* test.xml in Resources */,
 				CB9C232618BB3B0C00DDA501 /* searcher_new_voice_btn@2x.png in Resources */,
 				CB9C238818BB3B0C00DDA501 /* B1_ProductListLargeCell_Phone.xml in Resources */,
 				1848BD8C18B4D8690007238A /* messages_tableview_background@2x.png in Resources */,

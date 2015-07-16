@@ -312,6 +312,8 @@ ON_MESSAGE3( API, user_signupFields, msg )
 		self.fields = msg.GET_OUTPUT( @"data" );
 		
 		[SIGNUP_FIELD userDefaultsWrite:[self.fields objectToString] forKey:@"UserModel.fields"];
+        
+        [self postNotification:self.UPDATED];
 	}
 }
 

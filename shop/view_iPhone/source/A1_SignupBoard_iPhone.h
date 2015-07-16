@@ -27,6 +27,8 @@ AS_OUTLET( BeeUIScrollView, list )
 AS_MODEL( UserModel, userModel )
 
 @property (nonatomic, retain) NSMutableArray * group;
+
+@property (nonatomic) BOOL updateAble;
 //@property (nonatomic, retain) NSArray * group2;
 
 @end

@@ -71,7 +71,7 @@
 <string name="bonus_submit">提交</string>
 <string name="login_account">账户</string>
 <string name="login_login">登录</string>
-<string name="login_username">用户名</string>
+<string name="login_username">手机号码</string>
 <string name="login_password">密码</string>
 <string name="login_register">没有帐号？免费注册</string>
 <string name="profile_personal">个人中心</string>
@@ -372,4 +372,8 @@
 <string name="will_end2">后结束</string>
 <string name="error_aps">无法开启推送通知，请前往系统设置中修改</string>
 <string name="specs_tips">点击选择配件和数量</string>
+<string name="get_code">获取验证码</string>
+<string name="check_code">验证码</string>
+<string name="wait_code">等待%d秒</string>
+
 </resources>

@@ -18,6 +18,7 @@
 #import "AppBoard_iPhone.h"
 
 #import "FormCell.h"
+#import "UserModel.h"
 
 @implementation A1_SignupBoard_iPhone
 
@@ -26,11 +27,16 @@ SUPPORT_AUTOMATIC_LAYOUT( YES )
 
 DEF_MODEL( UserModel, userModel )
 
+
 - (void)load
 {
+    self.updateAble = NO;
+    
 	self.userModel = [UserModel modelWithObserver:self];
     
     self.group = [NSMutableArray array];
+
+    [[UserModel sharedInstance] updateFields];
 }
 
 - (void)unload
@@ -90,6 +96,7 @@ ON_CREATE_VIEWS( signal )
     [self observeNotification:BeeUIKeyboard.HIDDEN];
     [self observeNotification:BeeUIKeyboard.SHOWN];
     [self observeNotification:BeeUIKeyboard.HEIGHT_CHANGED];
+    [self observeNotification:UserModel.UPDATED];
 }
 
 ON_DELETE_VIEWS( signal )
@@ -97,6 +104,7 @@ ON_DELETE_VIEWS( signal )
     [self unobserveNotification:BeeUIKeyboard.HIDDEN];
     [self unobserveNotification:BeeUIKeyboard.HEIGHT_CHANGED];
     [self unobserveNotification:BeeUIKeyboard.SHOWN];
+    [self unobserveNotification:UserModel.UPDATED];
 }
 
 ON_LAYOUT_VIEWS( signal )
@@ -193,9 +201,9 @@ ON_SIGNAL3( SignupBoard_iPhone, signin, signal )
     [self.group addObject:username];
     
     FormData * email = [FormData data];
-    email.tagString = @"email";
-    email.placeholder = __TEXT(@"register_email");
-    email.keyboardType = UIKeyboardTypeEmailAddress;
+    email.tagString = @"check_code";
+    email.placeholder = __TEXT(@"check_code");
+    email.keyboardType = UIKeyboardTypeDefault;
     email.returnKeyType = UIReturnKeyNext;
     [self.group addObject:email];
     
@@ -210,41 +218,32 @@ ON_SIGNAL3( SignupBoard_iPhone, signin, signal )
     password2.tagString = @"password2";
     password2.placeholder = __TEXT(@"register_confirm");
     password2.isSecure = YES;
-    
-    if ( fields.count == 0 )
-    {
-        password2.returnKeyType = UIReturnKeyDone;
-    }
-    else
-    {
-        password2.returnKeyType = UIReturnKeyNext;
-    }
-    
+    password2.returnKeyType = UIReturnKeyDone;
     [self.group addObject:password2];
     
-    if ( fields && 0 != fields.count  )
-    {
-        for ( int i=0; i < fields.count; i++ )
-        {
-            SIGNUP_FIELD * field = fields[i];
-            
-            FormData * element = [FormData data];
-            element.tagString = field.id.stringValue;
-            element.placeholder = field.name;
-            element.data = field;
-            
-            if ( i == (fields.count - 1) )
-            {
-                element.returnKeyType = UIReturnKeyDone;
-            }
-            else
-            {
-                element.returnKeyType = UIReturnKeyNext;
-            }
-            
-            [self.group addObject:element];
-        }
-    }
+//    if ( fields && 0 != fields.count  )
+//    {
+//        for ( int i=0; i < fields.count; i++ )
+//        {
+//            SIGNUP_FIELD * field = fields[i];
+//            
+//            FormData * element = [FormData data];
+//            element.tagString = field.id.stringValue;
+//            element.placeholder = field.name;
+//            element.data = field;
+//            
+//            if ( i == (fields.count - 1) )
+//            {
+//                element.returnKeyType = UIReturnKeyDone;
+//            }
+//            else
+//            {
+//                element.returnKeyType = UIReturnKeyNext;
+//            }
+//            
+//            [self.group addObject:element];
+//        }
+//    }
 }
 
 - (void)doRegister
@@ -269,7 +268,7 @@ ON_SIGNAL3( SignupBoard_iPhone, signin, signal )
             userName = cell.input.text.trim;
             data.text = userName;
         }
-        else if( [data.tagString isEqualToString:@"email"] )
+        else if( [data.tagString isEqualToString:@"check_code"] )
         {
             email = cell.input.text.trim;
             data.text = email;
@@ -375,6 +374,14 @@ ON_NOTIFICATION3( BeeUIKeyboard, HEIGHT_CHANGED, notification )
 ON_NOTIFICATION3( BeeUIKeyboard, HIDDEN, notification )
 {
     [self.list setBaseInsets:UIEdgeInsetsZero];
+}
+
+ON_NOTIFICATION3(UserModel, UPDATED, notification)
+{
+    if(self.list.whenReloading)
+    {
+        self.list.whenReloading();
+    }
 }
 
 #pragma mark -

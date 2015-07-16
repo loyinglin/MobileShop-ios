@@ -119,8 +119,8 @@
 	ALIAS( bee.services.location,			lbs );
 
 	// 配置微信
-	weixin.config.appId			= @"<Your weixinID>";
-	weixin.config.appKey		= @"<Your weixinKey>";
+	weixin.config.appId			= @"wx68a23c9892a566ce";
+	weixin.config.appKey		= @"1250927601";
 	
 	// 配置新浪
 	sweibo.config.appKey		= @"1071503110";

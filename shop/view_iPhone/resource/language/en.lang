@@ -70,7 +70,7 @@
 <string name="bonus_submit">Submit</string>
 <string name="login_account">Account</string>
 <string name="login_login">Sign In</string>
-<string name="login_username">User Name </string>
+<string name="login_username">Phone Number</string>
 <string name="login_password">Password</string>
 <string name="login_register">Sign up for free</string>
 <string name="profile_personal">Account</string>
@@ -372,5 +372,8 @@
 <string name="will_end2"></string>
 <string name="error_aps">Failed to enable push notification, please manually modify.</string>
 <string name="specs_tips">Click on the select accessories and quantity</string>
-
+<string name="get_code">get code</string>
+<string name="check_code">check_code</string>
+<string name="wait_code">wait%ds
+</string>
 </resources>
