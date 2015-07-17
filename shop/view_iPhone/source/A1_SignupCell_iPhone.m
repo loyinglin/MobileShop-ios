@@ -13,12 +13,26 @@
 //
 
 #import "A1_SignupCell_iPhone.h"
+#import "A1_SignupBoard_iPhone.h"
 #import "FormCell.h"
 
 
 #pragma mark -
 
+
+@interface A1_SignupCell_iPhone()
+{
+    
+}
+
+@property( retain, nonatomic ) NSTimer* timer;
+@property( nonatomic ) int count;
+
+@end
+
+
 @implementation A1_SignupCell_iPhone
+
 
 SUPPORT_AUTOMATIC_LAYOUT( YES )
 SUPPORT_RESOURCE_LOADING( YES )
@@ -27,17 +41,20 @@ DEF_OUTLET( BeeUIImageView, background )
 DEF_OUTLET( BeeUITextField, input )
 DEF_OUTLET( BeeUIButton, codeButton)
 
+DEF_SIGNAL( MOBILE_REGISTER )
+
 - (void)load
 {
 }
 
 - (void)unload
 {
-    if(timer)
+    if(self.timer)
     {
-        [timer invalidate];
-        timer = nil;
+        [self.timer invalidate];
+        self.timer = nil;
     }
+    [self unobserveNotification:A1_SignupBoard_iPhone.TIME_CLICK];
 }
 
 - (void)dataDidChanged
@@ -59,6 +76,11 @@ DEF_OUTLET( BeeUIButton, codeButton)
         }
         
         self.codeButton.visible = [formData.tagString isEqualToString: @"check_code"];
+        if (self.codeButton.visible)
+        {
+            [self unobserveNotification:A1_SignupBoard_iPhone.TIME_CLICK];
+            [self observeNotification:A1_SignupBoard_iPhone.TIME_CLICK];
+        }
         
         switch ( formData.scrollIndex )
         {
@@ -76,33 +98,45 @@ DEF_OUTLET( BeeUIButton, codeButton)
     }
 }
 
-NSTimer* timer;
-int count = 60;
+//-(void)handleUISignal:(BeeUISignal *)signal
+//{
+//    count = 10;
+//}
 
 ON_SIGNAL2(codeButton, signal)
 {
-    if([timer isValid])
+    if(self.timer != nil && [self.timer isValid])
     {
         //counting now
+        [[BeeUIApplication sharedInstance] presentMessageTips:[NSString stringWithFormat:__TEXT(@"wait_code"), self.count]];
         return ;
     }
-    count = 60;
+    [self sendUISignal:self.MOBILE_REGISTER];
+}
+
+ON_NOTIFICATION3(A1_SignupBoard_iPhone, TIME_CLICK, notification)
+{
+    self.count = 60;
     
-    [self.codeButton setTitle:[NSString stringWithFormat:__TEXT(@"wait_code"), count--]];
+    [self.codeButton setTitle:[NSString stringWithFormat:__TEXT(@"wait_code"), self.count--]];
     
-    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeClick) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                             target:self
+                                           selector:@selector(timeClick)
+                                           userInfo:nil
+                                            repeats:YES];
 }
 
 -(void)timeClick
 {
-    [self.codeButton setTitle:[NSString stringWithFormat:__TEXT(@"wait_code"), count--]];
+    [self.codeButton setTitle:[NSString stringWithFormat:__TEXT(@"wait_code"), self.count--]];
     
-    if(count <= 0)
+    if(self.count <= 0)
     {
-        if([timer isValid])
+        if([self.timer isValid])
         {
-            [timer invalidate];
-            timer = nil;
+            [self.timer invalidate];
+            self.timer = nil;
             [self.codeButton setTitle:__TEXT(@"get_code")];
         }
     }

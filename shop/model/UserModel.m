@@ -206,6 +206,12 @@ DEF_NOTIFICATION( UPDATED )
 	.INPUT( @"password", password );
 }
 
+- (void)mobileRegister:(NSString *)mobile
+{
+    self.CANCEL_MSG(API.mobile_register);
+    self.MSG(API.mobile_register).INPUT(@"mobile", mobile);
+}
+
 - (void)signupWithUser:(NSString *)user
 			  password:(NSString *)password
 				 email:(NSString *)email

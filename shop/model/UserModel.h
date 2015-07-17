@@ -37,6 +37,8 @@ AS_NOTIFICATION( UPDATED )
 - (void)setOnline:(BOOL)flag;
 - (void)setOffline:(BOOL)flag;
 
+- (void)mobileRegister:(NSString *)mobile;
+
 - (void)signinWithUser:(NSString *)user
 			  password:(NSString *)password;
 - (void)signupWithUser:(NSString *)user

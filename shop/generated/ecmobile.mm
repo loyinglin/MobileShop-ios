@@ -5,6 +5,7 @@
 //
 
 #import "ecmobile.h"
+//#import "JSONKit.h"
 
 #pragma mark - models
 
@@ -2193,6 +2194,30 @@ DEF_MESSAGE_( user_signup, msg )
 	else if ( msg.cancelled )
 	{
 	}
+}
+
+#pragma mark - POST mobible register
+DEF_MESSAGE_( mobile_register, msg)
+{
+    if (msg.sending)
+    {
+        NSString * reqeustURI = @"http://www.wayouquan.cn/mobile/sms.php?act=send&flag=register";
+        
+        NSMutableDictionary * requestBody = [NSMutableDictionary dictionary];
+        NSString * mobile = msg.GET_INPUT(@"mobile");
+        requestBody.APPEND( @"mobile", mobile );
+        msg.HTTP_POST(reqeustURI).PARAM(@"mobile", mobile);
+    }
+    else if (msg.succeed)
+    {
+        NSDictionary * response = msg.responseJSONDictionary;
+        NSString *code = [response stringAtPath:@"code"];
+        NSString *mobile_code = [response stringAtPath:@"mobile_code"];
+        NSString *error = [response stringAtPath:@"msg"];
+        msg.OUTPUT(@"code", code);
+        msg.OUTPUT(@"mobile_code", mobile_code);
+        msg.OUTPUT(@"msg", error);
+    }
 }
 
 #pragma mark - POST user/signupFields

@@ -27,6 +27,8 @@ SUPPORT_AUTOMATIC_LAYOUT( YES )
 
 DEF_MODEL( UserModel, userModel )
 
+DEF_NOTIFICATION( TIME_CLICK )
+
 
 - (void)load
 {
@@ -170,6 +172,11 @@ ON_SIGNAL3( SignupBoard_iPhone, signin, signal )
 	[self.stack popBoardAnimated:YES];
 }
 
+ON_SIGNAL3( A1_SignupCell_iPhone, MOBILE_REGISTER, signal)
+{
+    [self mobileRegister];
+}
+
 #pragma mark -
 
 - (NSArray *)inputs
@@ -246,6 +253,8 @@ ON_SIGNAL3( SignupBoard_iPhone, signin, signal )
 //    }
 }
 
+
+
 - (void)doRegister
 {    
     NSString * userName = nil;
@@ -301,29 +310,29 @@ ON_SIGNAL3( SignupBoard_iPhone, signin, signal )
         }
     }
 	
-	if ( 0 == userName.length )
+	if ( 11 != userName.length )
 	{   
-		[self presentMessageTips:__TEXT(@"wrong_username")];
+		[self presentMessageTips:__TEXT(@"phone_number_error")];
 		return;
 	}
     
-	if ( userName.length < 2 )
-	{
-		[self presentMessageTips:__TEXT(@"username_too_short")];
-		return;
-	}
-    
-	if ( userName.length > 20 )
-	{
-		[self presentMessageTips:__TEXT(@"username_too_long")];
-		return;
-	}
+//	if ( userName.length < 2 )
+//	{
+//		[self presentMessageTips:__TEXT(@"username_too_short")];
+//		return;
+//	}
+//    
+//	if ( userName.length > 20 )
+//	{
+//		[self presentMessageTips:__TEXT(@"username_too_long")];
+//		return;
+//	}
 
-	if ( 0 == email.length || NO == [email isEmail] )
-	{
-		[self presentMessageTips:__TEXT(@"wrong_email")];
-		return;
-	}
+//	if ( 0 == email.length || NO == [email isEmail] )
+//	{
+//		[self presentMessageTips:__TEXT(@"wrong_email")];
+//		return;
+//	}
 	
 	if ( 0 == password.length || NO == [password isPassword] )
 	{
@@ -355,6 +364,37 @@ ON_SIGNAL3( SignupBoard_iPhone, signin, signal )
 							fields:fields];
 }
 
+
+
+- (void)mobileRegister
+{
+    NSArray * inputs = [self inputs];
+    
+    NSString * mobile;
+    
+    for ( BeeUITextField * input in inputs )
+    {
+        A1_SignupCell_iPhone * cell = (A1_SignupCell_iPhone *)input.superview;
+        
+        FormData * data = cell.data;
+        
+        if( [data.tagString isEqualToString:@"username"] )
+        {
+            mobile = cell.input.text.trim;
+        }
+    }
+    
+    if ( 11 != [mobile length] )
+    {
+        [self presentMessageTips:@"请输入正确手机号码"];
+        return;
+    }
+    
+    [self postNotification:self.TIME_CLICK];
+    [self.userModel mobileRegister:mobile];
+}
+
+
 #pragma mark -
 
 ON_NOTIFICATION3( BeeUIKeyboard, SHOWN, notification )
@@ -384,7 +424,40 @@ ON_NOTIFICATION3(UserModel, UPDATED, notification)
     }
 }
 
+-(void)handleUISignal:(BeeUISignal *)signal
+{
+ //   signal.arrived = YES;
+}
+
 #pragma mark -
+
+ON_MESSAGE3(API, mobile_register, msg)
+{
+    if(msg.sending)
+    {
+        [self presentLoadingTips:__TEXT(@"get_code")];
+    }
+    else
+    {
+        [self dismissTips];
+    }
+    
+    if(msg.succeed)
+    {
+        id status = msg.GET_OUTPUT(@"code");
+        if (status) {
+            [bee.ui.appBoard presentSuccessTips:@"验证码已发送"];
+        }
+        else {
+            NSString* errorDesc = msg.GET_OUTPUT(@"msg");
+            [bee.ui.appBoard presentMessageTips:errorDesc];
+        }
+    }
+    else if ( msg.failed )
+    {
+        [self showErrorTips:msg];
+    }
+}
 
 ON_MESSAGE3( API, user_signup, msg )
 {

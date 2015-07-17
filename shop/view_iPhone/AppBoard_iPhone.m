@@ -68,6 +68,13 @@ DEF_MODEL( UserModel,	userModel )
 
 #pragma mark -
 
+
+-(void)test
+{
+    BeeSocket* socket = [[BeeSocket alloc] init];
+}
+
+
 - (void)load
 {
 	self.configModel = [ConfigModel modelWithObserver:self];

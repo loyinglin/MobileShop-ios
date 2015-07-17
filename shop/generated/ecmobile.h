@@ -526,6 +526,9 @@ AS_MESSAGE( user_signup );
 // POST user/signupFields
 AS_MESSAGE( user_signupFields );
 
+// mobile register
+AS_MESSAGE( mobile_register);
+
 // POST validate/bonus
 AS_MESSAGE( validate_bonus );
 

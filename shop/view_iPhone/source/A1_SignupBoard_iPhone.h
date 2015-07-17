@@ -26,6 +26,8 @@ AS_OUTLET( BeeUIScrollView, list )
 
 AS_MODEL( UserModel, userModel )
 
+AS_NOTIFICATION(TIME_CLICK)
+
 @property (nonatomic, retain) NSMutableArray * group;
 
 @property (nonatomic) BOOL updateAble;

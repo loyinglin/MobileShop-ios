@@ -375,5 +375,6 @@
 <string name="get_code">获取验证码</string>
 <string name="check_code">验证码</string>
 <string name="wait_code">等待%d秒</string>
+<string name="phone_number_error">请输入正确的手机号码</string>
 
 </resources>

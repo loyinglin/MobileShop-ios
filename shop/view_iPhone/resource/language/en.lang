@@ -374,6 +374,7 @@
 <string name="specs_tips">Click on the select accessories and quantity</string>
 <string name="get_code">get code</string>
 <string name="check_code">check_code</string>
-<string name="wait_code">wait%ds
-</string>
+<string name="wait_code">wait%ds</string>
+<string name="phone_number_error">please input correct phone number</string>
+
 </resources>

@@ -22,4 +22,7 @@ AS_OUTLET( BeeUIImageView, background )
 AS_OUTLET( BeeUITextField, input )
 AS_OUTLET( BeeUIButton, codeButton)
 
+AS_SIGNAL( MOBILE_REGISTER )
+
+
 @end
