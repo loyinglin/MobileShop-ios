@@ -127,6 +127,20 @@ ON_NOTIFICATION3(A1_SignupBoard_iPhone, TIME_CLICK, notification)
                                             repeats:YES];
 }
 
+-(void)notify_time_click
+{
+    self.count = 60;
+    
+    [self.codeButton setTitle:[NSString stringWithFormat:__TEXT(@"wait_code"), self.count--]];
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                  target:self
+                                                selector:@selector(timeClick)
+                                                userInfo:nil
+                                                 repeats:YES];
+}
+
+
 -(void)timeClick
 {
     [self.codeButton setTitle:[NSString stringWithFormat:__TEXT(@"wait_code"), self.count--]];

@@ -24,5 +24,6 @@ AS_OUTLET( BeeUIButton, codeButton)
 
 AS_SIGNAL( MOBILE_REGISTER )
 
+-(void) notify_time_click;
 
 @end

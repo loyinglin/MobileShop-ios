@@ -194,6 +194,23 @@ ON_SIGNAL3( A1_SignupCell_iPhone, MOBILE_REGISTER, signal)
     return inputs;
 }
 
+-(void) notify_time_click
+{
+    
+    for ( BeeUIScrollItem * item in self.list.items )
+    {
+        if ( [item.view isKindOfClass:[A1_SignupCell_iPhone class]] )
+        {
+            A1_SignupCell_iPhone *cell = (A1_SignupCell_iPhone*)item.view;
+            FormData * data = cell.data;
+            if(data && [data.tagString isEqualToString: @"check_code"])
+            {
+                [cell notify_time_click];
+            }
+        }
+    }
+}
+
 - (void)setupFields
 {
     [self.group removeAllObjects];
@@ -389,8 +406,8 @@ ON_SIGNAL3( A1_SignupCell_iPhone, MOBILE_REGISTER, signal)
         [self presentMessageTips:@"请输入正确手机号码"];
         return;
     }
-    
-    [self postNotification:self.TIME_CLICK];
+    [self notify_time_click];
+ //   [self postNotification:self.TIME_CLICK];
     [self.userModel mobileRegister:mobile];
 }
 
